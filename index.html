@@ -2,159 +2,336 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fatima Mehvash | AI & Data Science Portfolio</title>
+
+    <meta property="og:image" content="https://github.com/MohammadYAmmar/MohammadYAmmar.github.io/blob/main/images/background.jpeg" />
+    <meta property="og:description" content="Mohammad Yaser Ammar personal website to display information, projects, and contact " />
+
+    <!-- https://fontawesome.com/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <!-- Zigzag Timeline Layout -->
+    <!-- <link rel="stylesheet" href="timeline.css"> -->
+    <!-- jquery todo  -->
+    <!-- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
+    
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <title>Mohammad Y A</title>
 </head>
 <body>
 
-    <!-- Navigation -->
-    <header>
-        <nav>
-            <h1 class="logo">Fatima Mehvash</h1>
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#leadership">Leadership</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg sticky-top">
+        <a href="#" class="logo">Mohammad Yaser Ammar</a>
+        <nav class="navigation">
+            <a href="#resume">Resume</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>     
+            <a href="https://mohammadyammar.github.io/competitions.html">Competitions</a>
+            <a href="https://mohammadyammar.github.io/conferences.html">Conferences 🔜</a>           
         </nav>
     </header>
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero fade-in">
-        <div class="hero-content">
-            <img src="profile.jpeg" alt="Fatima Mehvash" class="profile-pic" width="150" height="250">
-            <h2>Hi, I'm <span>Fatima Mehvash</span></h2>
-            <p>Master’s in Computer Science (AI Track) | AI, ML, NLP, Computer Vision</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn">View Projects</a>
-                <a href="#contact" class="btn-outline">Contact Me</a>
-                <a href="Fatima_Mehvash_Resume.pdf" class="btn-outline" download>📄 Download Resume</a>
+    
+    <!-- Main -->
+    <section class="main">
+        <div>
+            <h2>Hello, I'm Eng. Mohammad<br><span>Computer Engineer</span></h2>
+            <h3>Data Analyst Developer</h3>
+            <a href="#projects" class="main-btn">View my work</a>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/mohammad-y-ammar/" ><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/MohammadYAmmar/"><i class="fab fa-github"></i></a>
+                <a href="https://stackoverflow.com/users/9244680/mohammad-yaser-ammar"><i class="fab fa-stack-overflow"></i></a>
+                <a href="https://twitter.com/mohammad_yammar"><i class="fab fa-twitter-square"></i></a>
             </div>
         </div>
     </section>
 
-    <!-- About -->
-    <section id="about" class="fade-in">
-        <h2>About Me</h2>
-        <p>Master’s student in Computer Science (AI track) with 2+ years of professional experience in software development and data analytics. Strong foundation in machine learning, NLP, and computer vision with proven ability to build end-to-end scalable solutions. Passionate about developing real-time intelligent systems that enhance user experiences.</p>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="fade-in">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div>
-                <h3>Languages</h3>
-                <p>Python, R, Java, C, SQL, JavaScript, HTML, CSS</p>
+    <!-- Resume -->
+    <section class="cards" id="resume">
+        <h2 class="title">Resume</h2>
+        <div class="content">
+            <!-- 1 -->
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="info">
+                    <h3>Eduction</h3>
+                    <p>Bachelor's in Computer Engineering from Taibah University<br> Sep 2016 - Apr 2021 <br>
+                        I am graduated 2nd in the class with a GPA of 4/5</p>
+                </div>
             </div>
-            <div>
-                <h3>Technologies/Tools</h3>
-                <p>TensorFlow, OpenCV, Keras, Tableau, Git, Jupyter, MATLAB</p>
+            <!-- 2 -->
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-solid fa-laptop"></i>
+                </div>
+                <div class="info">
+                    <h3>Experience</h3>
+                    <p>Data Analyst Developer at <a href="https://www.aces-co.com/" class="more-details">ACES</a>  from May/2022</p>
+                    <p>5 months internship as Full Stack Engineer Intern in Smart methods</p>
+                    <!-- todo make page with a timeline of Experience -->
+                    <a href="https://www.linkedin.com/in/mohammad-y-ammar/details/experience/" class="more-details">More details</a>
+                </div>
             </div>
-            <div>
-                <h3>Systems</h3>
-                <p>Full SDLC, Testing, Agile</p>
+            <!-- 3 -->
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <div class="info">
+                    <h3>Volunteering Experience</h3>
+                    <p>Vice lead of Google DSC club <br> Information Committee of IT club <br> 2 courses programming to children <br> 2018/2022</p>
+                    <a href="https://www.linkedin.com/in/mohammad-y-ammar/details/volunteering-experiences/" class="more-details">More details</a>
+                </div>
             </div>
-        </div>
     </section>
 
-    <!-- Experience -->
-    <section id="experience" class="fade-in">
-        <h2>Experience</h2>
-        <div class="exp-card">
-            <h3>Data Analyst & Software Developer | ACES, Riyadh</h3>
-            <p>Apr 2022 – Jul 2023</p>
-            <ul>
-                <li>Designed and implemented a database-driven system to monitor employee performance.</li>
-                <li>Developed predictive ML models for sales optimization.</li>
-                <li>Built computer vision solutions for surveillance.</li>
-            </ul>
-        </div>
-        <div class="exp-card">
-            <h3>Python Instructor | Tekie, India</h3>
-            <p>Jun 2022 – Mar 2023</p>
-            <ul>
-                <li>Mentored 200+ students in Python, chatbots, and data scrapers.</li>
-                <li>Conducted code reviews and live workshops.</li>
-            </ul>
-        </div>
-        <div class="exp-card">
-            <h3>Data Analyst Intern | TeaSwan, India</h3>
-            <p>Mar 2021 – May 2021</p>
-            <ul>
-                <li>Conducted sales and market trend analysis, increasing sales by 18%.</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Leadership -->
-    <section id="leadership" class="fade-in">
-        <h2>Leadership & Activities</h2>
-        <div class="exp-card">
-            <h3>Computer Society of India (CSI)</h3>
-            <ul>
-                <li><strong>Chief Coordinator/Student President</strong> | Aug 2021 – Aug 2022: Oversaw event planning, operations, HR, and tech teams.</li>
-                <li><strong>Head of Human Resources</strong> | Mar 2019 – Aug 2021: Managed HR activities and team collaborations.</li>
-                <li><strong>Tech & Creative Team Member</strong> | Sep 2018 – Mar 2019: Contributed to technical and creative initiatives.</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Education -->
-    <section id="education" class="fade-in">
-        <h2>Education</h2>
-        <div class="exp-card">
-            <h3>Master of Science in Computer Science (AI Track)</h3>
-            <p>Binghamton University, NY | Aug 2023 – May 2025</p>
-            <p>Relevant Coursework: Design Analysis & Algorithms, Machine Learning, NLP, AI, Data Mining, HCI, Computer Architecture</p>
-        </div>
-        <div class="exp-card">
-            <h3>Bachelor of Engineering in Computer Science (Data Science Track)</h3>
-            <p>Osmania University, India | Aug 2018 – Jun 2022</p>
-        </div>
-    </section>
+    <!-- Experience and volunteer todo -->
 
     <!-- Projects -->
-    <section id="projects" class="fade-in">
-        <h2>Projects</h2>
-        <div class="project-grid">
+    <section class="projects" id="projects">
+        <h2 class="title">Projects</h2>
+        <div class="content">
+            <!-- 1 -->
             <div class="project-card">
-                <h3>Question Answering Model</h3>
-                <p>Developed a QA model using SQuAD dataset; building a custom transformer-based model for company-specific documents.</p>
+                <div class="project-image">
+                    <!-- todo update image -->
+                    <img src="images/work1.png" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Develop desktop applications | Graduation project</p>
+                    <strong class="project-title">
+                        <span>Tool for Taibah University Network Application Faults</span>
+                        <a href="https://youtu.be/BNCBGkdswC8" class="more-details">More details</a>
+                    </strong>
+                </div>
             </div>
+            <!-- 2 -->
             <div class="project-card">
-                <h3>Synopsis Model</h3>
-                <p>Hybrid summary model to assist visually impaired individuals using ML, CNN, NLP (92% accuracy).</p>
+                <div class="project-image">
+                    <!-- todo update image -->
+                    <img src="images/work2.png" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Develop on AI | NEOM AI Challenge</p>
+                    <strong class="project-title">
+                        <span>Automating Road Speed Limit Using Artificial Intelligence</span>
+                        <a href="https://www.linkedin.com/posts/mohammad-y-ammar_aesaevaexaeyabraeuaeyaewaet-aepaesaeqaetaerabraepaesaehaepaesaetaeyaerabraesaesaeyaeraepaejabraepaesaepaedaefaeuaepaehaey-activity-6711385850695036929-9g9L/" class="more-details">More details</a>
+                    </strong>
+                </div>
             </div>
+            <!-- Split -->
+            <hr>
+
+            <!-- todo add URL of GitHub repo -->
+              <!-- 3 -->
+              <div class="project-card">
+                <div class="project-image">
+                    <!-- todo update image -->
+                    <img src="images/work3.png" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Develop & Network & Linux</p>
+                    <strong class="project-title">
+                        <span>Arduino Uno to IoT</span>
+                        <a href="https://github.com/MohammadYAmmar/Arduino-Uno-to-IoT-with-old-laptop" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>      
+            <!-- 4 -->
             <div class="project-card">
-                <h3>Facial Emotion & Drowsiness Detection</h3>
-                <p>Real-time detection with TensorFlow/Keras; 96% accuracy and alarm alerts for drowsiness.</p>
+                <div class="project-image">
+                    <img src="images/work4.png" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Developing an application | Smart methods training</p>
+                    <strong class="project-title">
+                        <span>Social Spacing | MIT App Inventor</span>
+                        <a href="https://youtu.be/RmL_CR5_Kiw" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>     
+            <!-- 5 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <!-- todo update image -->
+                    <img src="images/work5.png" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Develop desktop applications</p>
+                    <strong class="project-title">
+                        <span>Control panel for robot arm with databases</span>
+                        <a href="https://github.com/MohammadYAmmar/A-control-panel-program-for-robot-arm-with-databases-for-Windows-devices-via-c-sharp" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>  
+            <!-- 6 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <!-- todo change image -->
+                    <img src="images/work6.png" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Develop & Linux</p>
+                    <strong class="project-title">
+                        <!-- todo edit title  -->
+                        <span>Shell script Tool (Video to GIF) by Windows Subsystem Linux</span>
+                        <a href="https://github.com/MohammadYAmmar/Shell-script-Video-to-GIF-Windows-Subsystem-Linux" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>                                   
+    </section>
+    <!-- todo -->
+    <!-- Skills -->
+    <!-- <div class="skills text-center pb-5 pt-5">
+    <div class="card  ">
+        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+          <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="img-fluid" />
+          <a href="#!">
+            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+          </a>
+        </div>
+        <div class="card-header">Featured</div>
+        <div class="card-body">
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the bulk of the
+            card's content.
+          </p>
+          <button type="button" class="btn btn-primary">Button</button>
+        </div>
+      </div>
+    </div> -->
+    <!-- End Skills -->
+
+    <!-- todo here competitions | 24-4-2022 move to another file | show as time line -->
+
+    <!-- <div class="competitions text-center pb-5">
+        <div class="container pb-5 pt-5">
+        <h2 class="fw-bold">Competitions</h2>
+        <p class="text-black-50 mb-5">I participated in multiple competitions and it helped me as it is an opportunity to try more fields and skills</p>
+            <div class="row"> -->
+                    <!-- Box  -->
+                    <!-- <div class="col-md-6 col-lg-3">
+                    <div class="box bg-white">
+                       <img class="img-fluid" src="images/competitions/FFCHbKXXIAgXUdb (1).jfif" alt="">
+                       <h4 class="p-3 text-light">Devogame competition 2021</h4>
+                       <blockquote class="text-black-50 p-3">Third place winner in Devogame competition 2021 cloud and cybersecurity competition, by Devoteam and sponsored by the Ministry of Communications and Information Technology of Saudi Arabia.</blockquote>
+                   </div>
+               </div>                    -->
+                   <!-- Box  -->
+                   <!-- <div class="col-md-6 col-lg-3">
+                   <div class="box bg-white">
+                       <img class="img-fluid" src="images/certificates/CS50_AI.jpg" alt="CS50's Introduction to Artificial Intelligence with Python">
+                       <h4 class="p-3 text-light">CS50's Introduction to AI with Python</h4>
+                       <blockquote class="text-black-50 p-3">By Harvard University from edX in 2021</blockquote>
+                   </div>
+               </div> -->
+                   <!-- Box -->
+                   <!-- <div class="col-md-6 col-lg-3">
+                   <div class="box bg-white">
+                       <img class="img-fluid" src="images/certificates/CCNAv7.jpg" alt="">
+                       <h4 class="p-3 text-light">CCNAv7 course: Introduction to Networks</h4>
+                       <blockquote class="text-black-50 p-3">With a letter from CEO Cisco Networking Academy in 2021</blockquote>
+                   </div>
+               </div> -->
+                   <!-- Box -->
+                   <!-- <div class="col-md-6 col-lg-3">
+                   <div class="box bg-white">
+                       <img class="img-fluid" src="images/certificates/MS_Arabia.jpg" alt="Intro to Data & AI services, Services, and Cognitive services">
+                       <h4 class="p-3 text-light">Intro to Data & AI services, and Cognitive services</h4>
+                       <blockquote class="text-black-50 p-3">With Microsoft Teams by Microsoft Arabia in 2021</blockquote>
+                   </div>
+               </div>
+       </div>
+   </div>
+    
+    <!-- Certificates  -->
+    <!-- todo add links of that -->
+    <div class="certificates text-center pb-5 pt-5">
+        <div class="container pb-5 pt-5">
+            <h2 class="fw-bold">Certificates</h2>
+            <p class="text-black-50 mb-5">The best certificates during my self-learning journey from 2017 until now. And more of them is published in a continuation on my LinkedIn.</p>
+            <div class="row">
+                    <!-- Box  -->
+                    <div class="col-md-6 col-lg-3">
+                    <div class="box bg-white">
+                        <img class="img-fluid" src="images/certificates/CS50_AI.jpg" alt="CS50's Intro to Artificial Intelligence with Python">
+                        <h4 class="p-3 text-light">CS50's Intro to AI with Python</h4>
+                        <blockquote class="text-black-50 p-3">By Harvard University from edX in 2021</blockquote>
+                    </div>
+                </div>
+                     <!-- Box  -->
+                     <div class="col-md-6 col-lg-3">
+                     <div class="box bg-white">
+                        <img class="img-fluid" src="images/certificates/fullstack_Udacity.jpg" alt="1 Million Jordanian Coders Initiative By Udacity in 2022">
+                        <h4 class="p-3 text-light">Full Stack Development Track</h4>
+                        <blockquote class="text-black-50 p-3">1 Million Jordanian Coders Initiative By Udacity in 2022</blockquote>
+                    </div>
+                </div>                   
+                    <!-- Box -->
+                    <div class="col-md-6 col-lg-3">
+                    <div class="box bg-white">
+                        <img class="img-fluid" src="images/certificates/CCNAv7.jpg" alt="CCNA course: Intro to Networks">
+                        <h4 class="p-3 text-light">CCNAv7 course: Intro to Networks</h4>
+                        <blockquote class="text-black-50 p-3">With a letter from CEO Cisco Networking Academy in 2021</blockquote>
+                    </div>
+                </div>
+                    <!-- Box -->
+                    <div class="col-md-6 col-lg-3">
+                    <div class="box bg-white">
+                        <img class="img-fluid" src="images/certificates/MS_Arabia.jpg" alt="Intro to Data & AI services, Services, and Cognitive services">
+                        <h4 class="p-3 text-light">Intro to Data & AI and Cognitive services</h4>
+                        <blockquote class="text-black-50 p-3">With Microsoft Teams by Microsoft Arabia in 2021</blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Certificates  -->
+
+
+    <!-- Contact  -->
+    <section class="cards contact" id="contact">
+        <h2 class="title">Contact</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="info">
+                    <h3>Email</h3>
+                    <a href="mailto:eng.mohammad.y.ammar@gmail.com" class="more-details" id="email">eng.mohammad.y.ammar@gmail.com</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-phone phone"></i>
+                </div>
+                <div class="info">
+                    <h3>Phone</h3>
+                    <!-- <a href="https://telegram.me/mohammad_y_ammar" class="more-details">Send on Telegram</a> -->
+                    <!-- todo Add a message -->
+                </div>
             </div>
         </div>
     </section>
-
-    <!-- Contact -->
-    <section id="contact" class="fade-in">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:fmehvash@binghamton.edu">fmehvash@binghamton.edu</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/fatima-mehvash" target="_blank">linkedin.com/in/fatima-mehvash</a></p>
-    </section>
-
-   
-
-
-    <footer>
-        <p>© 2025 Fatima Mehvash. Built with ❤️</p>
-    </footer>
-
-    <script src="script.js"></script>
+    
+    <!-- <footer class="footer">
+        <p class="footer-title">Copyrights 2025 @ <span>Mohammad Yaser Ammar</span></p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/mohammad-y-ammar/" ><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/MohammadYAmmar/"><i class="fab fa-github"></i></a>
+            <a href="https://stackoverflow.com/users/9244680/mohammad-yaser-ammar"><i class="fab fa-stack-overflow"></i></a>
+            <a href="https://medium.com/@mohammad_y_ammar"><i class="fab fa-medium-square"></i></a>
+            <a href="https://twitter.com/mohammad_yammar"><i class="fab fa-twitter-square"></i></a>
+        </div>
+    </footer> -->
 </body>
 </html>
-
-
