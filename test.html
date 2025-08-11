@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Skills Boxes Test</title>
+<style>
+  :root {
+    --white: #ffffff;
+    --custom_blue: #386efd;
+    --dark-color: #19283f;
+    --section-color: #eff7fa;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--section-color);
+    margin: 0;
+    padding: 50px;
+  }
+  .skills-section {
+    text-align: center;
+  }
+  .section-title {
+    font-size: 2.4em;
+    font-weight: 700;
+    color: var(--custom_blue);
+    margin-bottom: 40px;
+  }
+  .skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+  .skill-box {
+    background-color: var(--white);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    padding: 2rem;
+    width: 320px;
+    color: var(--dark-color);
+    font-weight: 500;
+    transition: transform 0.3s ease;
+  }
+  .skill-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  }
+  .skill-box h3 {
+    font-size: 1.6em;
+    margin-bottom: 1rem;
+    color: var(--custom_blue);
+  }
+  .skill-box ul {
+    list-style: none;
+    text-align: left;
+    padding-left: 1rem;
+  }
+  .skill-box ul li {
+    margin-bottom: 0.8rem;
+    font-size: 1.1em;
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-fadein {
+    opacity: 0;
+    animation: fadeInUp 0.8s forwards;
+  }
+  .animate-fadein.delay-1 {
+    animation-delay: 0.4s;
+  }
+</style>
+</head>
+<body>
+
+<section id="skills" class="skills-section">
+  <h2 class="section-title">Skills & Strengths</h2>
+  <div class="skills-container">
+    <div class="skill-box animate-fadein">
+      <h3>Technical Skills</h3>
+      <ul>
+        <li>Python, R, Java, SQL</li>
+        <li>TensorFlow, Keras, OpenCV</li>
+        <li>AWS, GCP, Agile, Full SDLC</li>
+        <li>JavaScript, HTML, CSS</li>
+      </ul>
+    </div>
+    <div class="skill-box animate-fadein delay-1">
+      <h3>Personal Skills</h3>
+      <ul>
+        <li>Problem Solving & Adaptability</li>
+        <li>Leadership & Team Collaboration</li>
+        <li>Strong Communication</li>
+        <li>Detail Oriented & Self-motivated</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
