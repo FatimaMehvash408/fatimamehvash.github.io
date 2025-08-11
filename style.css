@@ -78,7 +78,7 @@ section {
         rgba(39, 70, 144, 0.85),
         rgba(24, 48, 96, 0.85)
       ),
-      url('images/background.jpeg') no-repeat center center fixed;
+      url('images/profile.jpeg') no-repeat center center fixed;
     background-size: cover;
     padding: 2rem;
     color: var(--white);
@@ -168,6 +168,24 @@ section {
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
+}
+.quote-section {
+  width: 100%;
+  background: linear-gradient(
+      rgba(10, 25, 70, 0.7),  /* semi-transparent royal blue overlay */
+      rgba(10, 25, 70, 0.7)
+    ),
+    url('images/bg.jpeg') no-repeat center center;
+  background-size: cover;
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f0f8ff;
+  font-style: italic;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 500;
 }
 
 /* Cards */
