@@ -189,70 +189,77 @@ section {
 }
 
 .skills-section {
-  background-color: var(--section-color);
   padding: 80px 200px;
+  background-color: var(--section-color);
   text-align: center;
 }
 
-.skills-section .title {
-  color: var(--custom_blue);
-  font-weight: 800;
+.section-title {
   font-size: 2.4em;
-  margin-bottom: 50px;
+  font-weight: 700;
+  color: var(--custom_blue);
+  margin-bottom: 40px;
 }
 
 .skills-container {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 3rem;
   flex-wrap: wrap;
 }
 
 .skill-box {
-  background: white;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(24, 48, 96, 0.15);
-  padding: 30px 35px;
-  width: 350px;
-  text-align: left;
+  background-color: var(--white);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  padding: 2rem;
+  width: 320px;
+  color: var(--dark-color);
+  font-weight: 500;
   transition: transform 0.3s ease;
 }
 
 .skill-box:hover {
   transform: translateY(-10px);
-  box-shadow: 0 12px 30px rgba(24, 48, 96, 0.25);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 
 .skill-box h3 {
+  font-size: 1.6em;
+  margin-bottom: 1rem;
   color: var(--custom_blue);
-  font-weight: 700;
-  font-size: 1.8em;
-  margin-bottom: 20px;
 }
 
 .skill-box ul {
   list-style: none;
-  padding-left: 0;
-  font-size: 1.1em;
-  line-height: 1.7;
-  color: #222;
+  text-align: left;
+  padding-left: 1rem;
 }
 
 .skill-box ul li {
-  position: relative;
-  padding-left: 20px;
-  margin-bottom: 12px;
-  font-weight: 500;
+  margin-bottom: 0.8rem;
+  font-size: 1.1em;
 }
 
-.skill-box ul li::before {
-  content: '•';
-  position: absolute;
-  left: 0;
-  color: var(--custom_blue);
-  font-weight: 900;
-  font-size: 1.3em;
-  line-height: 1;
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadein {
+  opacity: 0;
+  animation: fadeInUp 0.8s forwards;
+}
+
+.animate-fadein.delay-1 {
+  animation-delay: 0.4s;
 }
 
 
